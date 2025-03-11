@@ -34,7 +34,7 @@
 }
 
 .nav_fn li {
-	background-color: #003333;
+	/* background-color: #003333; */
 	display: block;
 	float: left;
 	width:9px;
