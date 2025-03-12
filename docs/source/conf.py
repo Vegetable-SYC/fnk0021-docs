@@ -15,6 +15,10 @@ sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 os.system("rm -r freenove_Kit")
 os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Three-wheeled_Smart_Car_Kit_for_Raspberry_Pi freenove_Kit")
 
+os.system("git clone --depth 1 https://github.com/Vegetable-SYC/templete-css freenove_css")
+os.system("cp -r freenove_css/_static .")
+os.system("cp -r freenove_css/_templates .")
+os.system("rm -r freenove_css")
 
 def prepend_to_file(file_path, content):
     with open(file_path, "r+") as file:
