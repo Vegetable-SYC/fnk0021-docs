@@ -85,7 +85,7 @@ html_theme = "sphinx_rtd_theme"
 
 
 html_static_path = ["_static"]
-html_favicon = '_static/images/freenove.png'
+html_favicon = '_static/images/logo.png'
 html_logo = "freenove-logo.png"
 html_theme_options = {
     "collapse_navigation": False,
