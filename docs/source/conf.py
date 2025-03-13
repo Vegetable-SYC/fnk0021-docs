@@ -68,13 +68,16 @@ version = "v1.0"
 # extensions = []
 extensions = [
     "sphinx_rtd_theme",
+    "sphinx_favicon"
     # "sphinx.ext.extlinks",
     # "sphinx.ext.intersphinx",
 ]
 
 templates_path = ["_templates"]
 exclude_patterns = []
-
+favicons = [
+    {"href": "_static/images/freenove.ico"},  # 基础图标
+]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
