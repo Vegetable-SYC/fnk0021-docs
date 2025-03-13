@@ -75,9 +75,6 @@ extensions = [
 
 templates_path = ["_templates"]
 exclude_patterns = []
-favicons = [
-    {"href": "_static/images/freenove.png"},  # 基础图标
-]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
