@@ -76,7 +76,7 @@ extensions = [
 templates_path = ["_templates"]
 exclude_patterns = []
 favicons = [
-    {"href": "_static/images/freenove.ico"},  # 基础图标
+    {"href": "_static/images/freenove.png"},  # 基础图标
 ]
 
 # -- Options for HTML output -------------------------------------------------
@@ -88,7 +88,7 @@ html_theme = "sphinx_rtd_theme"
 
 
 html_static_path = ["_static"]
-
+html_favicon = '_static/images/freenove.png'
 html_logo = "freenove-logo.png"
 html_theme_options = {
     "collapse_navigation": False,
