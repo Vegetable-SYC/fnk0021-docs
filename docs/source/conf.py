@@ -16,23 +16,26 @@ sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 os.system("rm -r freenove_Kit")
 os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Three-wheeled_Smart_Car_Kit_for_Raspberry_Pi freenove_Kit")
 
-# 删除文件夹
-os.system("rm -r _static")
-os.system("rm -r _templates")
-os.system("rm freenove-logo.png")
+# # 删除文件夹
+# os.system("rm -r _static")
+# os.system("rm -r _templates")
+# os.system("rm freenove-logo.png")
 
-# 克隆所需资料到freenove_css文件夹中
-os.system("git clone https://github.com/Vegetable-SYC/templete-css freenove_css")
+# # 克隆所需资料到freenove_css文件夹中
+# os.system("git clone https://github.com/Vegetable-SYC/templete-css freenove_css")
 
-# 复制网页样式到对应位置
-os.system("cp -r freenove_css/_static .")
-os.system("cp -r freenove_css/_templates .")
+# # 复制网页样式到对应位置
+# os.system("cp -r freenove_css/_static .")
+# os.system("cp -r freenove_css/_templates .")
 
-# 复制网页样式到对应位置
-os.system("cp freenove_css/freenove-logo.png .")
+# # 复制网页logo到对应位置
+# os.system("cp freenove_css/freenove-logo.png .")
 
-# 删除文件夹
-os.system("rm -r freenove_css")
+# # 复制网页图标到对应位置
+# os.system("cp freenove_css/freenove-logo.png .")
+
+# # 删除文件夹
+# os.system("rm -r freenove_css")
 
 def prepend_to_file(file_path, content):
     with open(file_path, "r+") as file:
@@ -52,7 +55,7 @@ def apend_to_file(file_path, content):
 #     )
 # }
 
-print("hello")
+# print("hello")
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -68,7 +71,7 @@ version = "v1.0"
 # extensions = []
 extensions = [
     "sphinx_rtd_theme",
-    "sphinx_favicon"
+    # "sphinx_favicon"
     # "sphinx.ext.extlinks",
     # "sphinx.ext.intersphinx",
 ]
@@ -85,8 +88,8 @@ html_theme = "sphinx_rtd_theme"
 
 
 html_static_path = ["_static"]
-html_favicon = '_static/images/logo.png'
-html_logo = "freenove-logo.png"
+html_favicon = "https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/images/freenove_logo_head.png"
+html_logo = "https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/images/freenove-logo.png"
 html_theme_options = {
     "collapse_navigation": False,
     "logo_only": True,
@@ -119,16 +122,23 @@ del frozen_locals
 
 
 html_css_files = [
-    "css/color-roles.css",
+    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/color-roles.css',
+    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/custom.css',
+    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/navigationStyle.css',
+]   
+
+html_js_files = [
+    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/js/navigationStyle.js',
 ]
+
 
 intersphinx_mapping = {
     "rpi-starter-kit": ("https://freenove-docs2.readthedocs.io/projects/fnk0066/en/latest/", None),
 }
+
 intersphinx_disabled_reftypes = ["*"]
 
 
 def setup(app):
     pass
     app.add_css_file("css/custom.css")
-
