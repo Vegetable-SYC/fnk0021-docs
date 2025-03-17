@@ -131,6 +131,11 @@ html_js_files = [
     'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/js/navigationStyle.js',
 ]
 
+html_style = [
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/navigation.html',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/layout.html',
+]
+
 intersphinx_mapping = {
     "rpi-starter-kit": ("https://freenove-docs2.readthedocs.io/projects/fnk0066/en/latest/", None),
 }
@@ -140,4 +145,4 @@ intersphinx_disabled_reftypes = ["*"]
 
 def setup(app):
     pass
-    app.add_css_file("custom.css")
+    app.add_css_file("css\custom.css")
