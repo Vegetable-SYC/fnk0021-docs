@@ -13,8 +13,8 @@ import sys
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
 # 克隆项目代码地址
-os.system("rm -r freenove_Kit")
-os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Three-wheeled_Smart_Car_Kit_for_Raspberry_Pi freenove_Kit")
+# os.system("rm -r freenove_Kit")
+# os.system("git clone --depth 1 https://github.com/Freenove/Freenove_Three-wheeled_Smart_Car_Kit_for_Raspberry_Pi freenove_Kit")
 
 # # 删除文件夹
 # os.system("rm -r _static")
@@ -122,15 +122,14 @@ del frozen_locals
 
 
 html_css_files = [
-    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/color-roles.css',
-    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/custom.css',
-    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/css/navigationStyle.css',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/color-roles.css',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/custom.css',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/navigationStyle.css',
 ]   
 
 html_js_files = [
-    'https://cdn.jsdelivr.net/gh/Vegetable-SYC/freenove-docs-nav@master/docs/source/_static/js/navigationStyle.js',
+    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/js/navigationStyle.js',
 ]
-
 
 intersphinx_mapping = {
     "rpi-starter-kit": ("https://freenove-docs2.readthedocs.io/projects/fnk0066/en/latest/", None),
@@ -141,4 +140,4 @@ intersphinx_disabled_reftypes = ["*"]
 
 def setup(app):
     pass
-    app.add_css_file("css/custom.css")
+    app.add_css_file("custom.css")
