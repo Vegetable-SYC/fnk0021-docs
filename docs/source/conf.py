@@ -121,20 +121,20 @@ print(rst_prolog)
 del frozen_locals
 
 
-html_css_files = [
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/color-roles.css',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/custom.css',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/navigationStyle.css',
-]   
+# html_css_files = [
+#     'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/color-roles.css',
+#     'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/custom.css',
+#     'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/css/navigationStyle.css',
+# ]   
 
-html_js_files = [
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/js/navigationStyle.js',
-]
+# html_js_files = [
+#     'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_static/js/navigationStyle.js',
+# ]
 
-html_style = [
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/navigation.html',
-    'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/layout.html',
-]
+# html_style = [
+#     # 'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/navigation.html',
+#     # 'https://cdn.jsdelivr.net/gh/Freenove/freenove-docs@nav/docs/source/_templates/layout.html',
+# ]
 
 intersphinx_mapping = {
     "rpi-starter-kit": ("https://freenove-docs2.readthedocs.io/projects/fnk0066/en/latest/", None),
